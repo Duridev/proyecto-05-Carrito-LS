@@ -52,6 +52,7 @@ function eliminarCurso(evt) {
         articulosCarrito = articulosCarrito.filter( curso => curso.id !== cursoId);
 
         carritoHTML(); // Itera sobre el carrito y muestra su HTML
+
     }
 }
 
@@ -132,4 +133,5 @@ function limpiarHTML() {
     while(contenedorCarrito.firstChild) {
         contenedorCarrito.removeChild(contenedorCarrito.firstChild)
     }
+    sincronizarStorage();
 }
